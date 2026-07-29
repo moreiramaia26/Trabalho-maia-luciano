@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Rotina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📅 Organizador de Rotina</h1>
+
+    <section>
+        <h2>Nova tarefa diária</h2>
+        <div class="input-group">
+            <input type="time" id="horaTarefa">
+            <input type="text" id="tarefa" placeholder="Nova tarefa">
+            <button onclick="adicionarTarefa()">Adicionar</button>
+        </div>
+        <ul id="listaTarefas"></ul>
+    </section>
+
+    <section>
+        <h2>Hábitos diários</h2>
+        <label><input type="checkbox" class="habito"> Beber 5 litros de água</label>
+        <label><input type="checkbox" class="habito"> Praticar 30 minutos de exercício</label>
+        <label><input type="checkbox" class="habito"> Ler 20 minutos</label>
+    </section>
+
+    <section>
+        <h2> Hábitos alimentares</h2>
+        <label><input type="checkbox" class="check"> Tomar Café da manhã as 6:00 horas </label>
+        <label><input type="checkbox" class="check"> Almoçar todo dia as 12:00 horas </label>
+        <label><input type="checkbox" class="check"> Jantar toda noite as 20:00 horas </label>
+    </section>
+
+    <section>
+        <h2>Tarefas Noturnas</h2>
+        <label><input type="checkbox" class="check">Organização do quarto </label>
+        <label><input type="checkbox" class="check">Manter um ambiente calmo e desacelerar </label>
+        <label><input type="checkbox" class="check">Organizar sua rotina para o próximo dia </label>
+    </section>
+
+    <section>
+        <h2>Estatísticas</h2>
+        <p>Prabéns, você concluiu sua rotina!: <span id="porcentagem">0%</span></p>
+        <progress id="barra" value="0" max="100"></progress>
+    </section>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
+
